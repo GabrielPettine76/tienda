@@ -1,0 +1,218 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+#menu{
+    display: none;
+   
+}
+label{
+    display: none;
+}
+header{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    h2{
+        color:rgb(88, 88, 154);
+        margin-top:20px;
+        margin-left: 20px;
+    }
+}
+nav{
+    background-color: white;
+    
+    opacity: 0.7;
+    ul{
+        li{
+            background-color:white;
+            text-decoration: none;
+            list-style: none;
+            display: inline-block;
+            margin:10px;
+            padding: 5px;
+            text-transform: uppercase;
+            &:hover{
+                background-color: orangered;
+                transform: scale(1.1);
+                transition: 1s;
+                padding: 4px;
+                margin:4px;
+                border-radius: 5px;
+
+            }   
+            a{
+                text-decoration: none;
+                &:hover{
+                    color:white;
+                }
+
+            }    
+        }
+    }
+    
+}
+
+.container{
+    margin-top: 30px;
+    min-height: 100vh;
+}
+.imgPrincipal img{
+    width: 100%;
+}
+
+.textoCentrado{
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    //transform: translate(-40%, -50%);
+    font-size: 1.5rem;
+    color:white;
+    h2{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
+.imgSec 
+{
+    width: 100%;
+    
+
+
+
+    img{
+        margin-left: 10px;
+    width: 50%;
+    height: auto;
+}}
+
+.row{
+	background-color: white;
+    padding: 70px 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+    
+}
+.col{
+    margin:20px 0 20px 20px;
+    .social-links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255,255,255,0.2);
+        margin:0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: rgb(88, 88, 154);
+        transition: all 0.5s ease;
+        &:hover{
+            color:white;
+            background-color: orangered;
+            transform: scale(1.1);
+            padding: 5px;
+            
+        }
+    }
+    h4{
+        text-transform: uppercase;
+        text-decoration: underline;
+        color:orangered;
+        margin-bottom: 10px;
+    }
+    li{
+        list-style: none;
+        margin-bottom: 5px;
+        width: 25%;
+        color:rgb(88, 88, 154);
+
+        a{
+            text-decoration: none;
+            &:hover{
+                background-color: orangered;
+                transform: scale(1.1);
+                transition: 1s;
+                border-radius: 5px;                
+                color:white;
+                margin:5px;
+                padding: 5px;
+                 
+            }
+        }
+    }
+}
+
+
+
+
+
+@media (max-width:1024px){
+    header{
+        grid-template-columns: 1fr;
+        margin: 10px 0;
+    }
+    ul{
+        display: none;
+      }
+      
+      input:checked  ~ ul{
+        display:block;
+      }
+    label {
+        box-sizing: border-box;
+        display: block;
+        float: center;
+        color:rgb(88, 88, 154);
+        width: 30px;
+        font-size: 2.5rem;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+        margin-top:20px;
+        margin-left:20px;
+      }
+      li {
+        display: block !important;
+        width: 25%;
+        margin: 0;
+        /*padding: 10px;*/
+        color:rgb(88, 88, 154);
+        list-style: none;
+        border-bottom: 1px solid grey;
+      }
+      .row ul{
+        display: block;
+      }
+    
+}
+
+@media (max-width:600px)
+{
+    .imgPrincipal{
+        img{
+            width: auto;
+
+        }
+    }
+    .textoCentrado{
+        top:30%;
+        left:10%
+    }
+    .row{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        .none{
+            display: none;
+        }
+    }
+
+}
