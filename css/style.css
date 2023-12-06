@@ -22,7 +22,7 @@ header {
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: 30px;
 }
-header h2 {
+header h1 {
   color: rgb(88, 88, 154);
   margin-top: 20px;
   margin-left: 20px;
@@ -246,6 +246,27 @@ nav ul li a:hover {
   background-size: cover;
 }
 
+.devolucion {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.devolucion h2 {
+  background-color: rgb(63, 63, 123);
+  color: white;
+  text-align: center;
+  margin: 20px 0;
+}
+.devolucion p {
+  margin: 10px 10px;
+}
+.devolucion h4 {
+  padding-bottom: 5px;
+  background-color: rgb(63, 63, 123);
+  color: white;
+}
+
 .contendorContacto {
   padding: 50px 50px 50px 50px;
   display: flex;
@@ -287,6 +308,7 @@ nav ul li a:hover {
   height: 80px;
   text-decoration: none;
   opacity: 0.9;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .formContacto button {
   margin-top: 25px;
@@ -382,7 +404,7 @@ nav ul li a:hover {
   label {
     box-sizing: border-box;
     display: block;
-    float: center;
+    float: right;
     color: rgb(88, 88, 154);
     width: 30px;
     font-size: 2.5rem;
@@ -391,8 +413,7 @@ nav ul li a:hover {
     font-weight: bold;
     text-align: center;
     user-select: none;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-right: 20px;
   }
   label:active {
     color: orangered;
