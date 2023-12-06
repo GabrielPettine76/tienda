@@ -482,6 +482,12 @@ nav ul li a:hover {
     text-align: center;
     height: 3rem;
   }
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 @media (max-width: 530px) {
   .contImg {
@@ -489,6 +495,31 @@ nav ul li a:hover {
   }
   .formContacto {
     padding: 5px 5px 5px 5px;
+  }
+  .mainTienda {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .mainTienda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .nuestrosLocales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
   }
 }
 
